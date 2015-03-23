@@ -83,7 +83,7 @@ Contact
 =======
  
 Minueto is a project of the McGill  Software Engineering Lab. 
-<http://www.cs.mcgill.ca/~joerg/sel/>
+<http://www.cs.mcgill.ca/~joerg/SEL/>
 
 If you're having trouble with Minueto, please feel free to search or file an issue at
 <http://github.com/Mikeware/minueto/issues>.
