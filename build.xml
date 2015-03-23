@@ -19,12 +19,18 @@ Lesser General Public License for more details.
 You should have received a copy of the GNU Lesser General Public
 License along with this library; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+Changes
+=======
+
+ * 09/29/2014 - Michael A. Hawker - Update for GitHub
+ 
 -->
 
 <project name="Minueto" default="help" basedir=".">
 	
 	<property name="version.major" value="2"/>
-	<property name="version.minor" value="0"/>	
+	<property name="version.minor" value="1"/>	
 	<property name="version" value="${version.major}.${version.minor}"/>
 	
 	<property name="src" value="src"/>
@@ -38,6 +44,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 	<property name="lib" value="lib"/>
 	
 	<property name="mf.created-by" value="Alexandre Denault"/>
+	<property name="mf.maintained-by" value="Michael A. Hawker"/>
 	<property name="mf.main-class" value="org.minueto.sample.Demos"/>
 	<property name="mf.classpath" value="minueto.jar"/>
 	
@@ -61,7 +68,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 		<echo message="  The following options are available:"/>
 		<echo message="  "/>
 		<echo message="  help : this message"/>
-		<echo message="  compile : compiles a version of Minueto"/>
+		<echo message="  build : compiles a version of Minueto"/>
 		<echo message="  package : creates a Minueto SDK package"/>
 		<echo message="  "/>
 		<echo message="  ex: ant package"/>
@@ -79,10 +86,10 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 						api/,
 						src/,
 						build.xml, 
-						readme.txt,
-						todo.txt,
-						license.txt,
-						changelog.txt,
+						README.md,
+						todo.md,
+						LICENSE,
+						changelog.md,
 						minueto.jar,
 						minueto-samples.jar"
 			basedir="${dist}"/>
@@ -100,6 +107,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 		<jar basedir="${build.samples}" destfile="${dist}/minueto-samples.jar">
 			<manifest>
 				<attribute name="Created-By" value="${mf.created-by}" />
+				<attribute name="Maintained-By" value="${mf.maintained-by}" />
 				<attribute name="Main-Class" value="${mf.main-class}" />
 				<attribute name="Class-Path" value="${mf.classpath}" />
 			</manifest>			

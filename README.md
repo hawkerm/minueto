@@ -36,22 +36,22 @@ Installation
 Download the Minueto SDK. Unzip the Minueto package using your favorite
 zip program. On Linux, you can use the following command :
 
-unzip Minueto_2.0.zip
+unzip Minueto_2.1.zip
  
 Once you unzip the full package, you'll find the following directory 
 structure.
 
     |- readme.md        : This file
-    |- license        : Minueto's licence (LGPL v2.1)
+    |- license          : Minueto's licence (LGPL v2.1)
     |- changelog.txt    : Changes in Minueto
-    |- todo.txt         : Things I should do in the near futur
+    |- todo.md          : Things to maybe do in the near future
     |- build.xml        : Allows you to compile Minueto
     |---\ lib           : Minueto's runtime jar
     |---\ api           : Minueto's api documentation
     |---\ samples       : Multiple examples to get you started
     |---\ Minueto       : Minueto's source
  
-If you want to start developping with Minueto, don't forget to add 
+If you want to start developing with Minueto, don't forget to add 
 Minueto.jar in the lib directory to your classpath. You can find more 
 information on changing your classpath at :
  
@@ -68,8 +68,8 @@ expect the javac and java command to be in your path.
 Documentation
 =============
  
-The API to use Minueto can be found in the API directory. You can also find a 
-lot of information on Minueto at <http://www.cs.mcgill.ca/~adenau/minueto/>
+The API to use Minueto can be found in the API directory or online <https://cdn.rawgit.com/Mikeware/minueto/master/api/index.html>. You can also find a 
+lot of information on Minueto at <http://github.com/Mikeware/minueto>
 
 Compiling
 =========
@@ -84,6 +84,7 @@ Contact
  
 Minueto is a project of the McGill  Software Engineering Lab. 
 <http://www.cs.mcgill.ca/~joerg/sel/sel.html>
-Questions related to Minueto should be directed to Alexandre Denault.
-<alexandre.denault@adinfo.qc.ca>
+
+If you're having trouble with Minueto, please feel free to search or file an issue at
+<http://github.com/Mikeware/minueto/issues>.
  

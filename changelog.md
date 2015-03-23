@@ -1,6 +1,13 @@
 Minueto Changelog
 =================
 
+2.1 New features
+
+* Modified MinuetoCircle to accept start and extension angles to create Arcs.
+* Added ArcDemo sample.
+* Update Documentation and fix some typos
+* Started Github Repository
+
 2.0.1 Bug Fix
 
 * Fixed MinuetoImage.clear() to clear the image in a transparent fashion.

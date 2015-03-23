@@ -1,3 +1,10 @@
+/*
+ * Changes
+ * =======
+ * 
+ *  * 09/29/2014 - Michael A. Hawker - Added ArcDemo
+ */
+
 package org.minueto.sample;
 
 import java.io.BufferedReader;
@@ -11,6 +18,7 @@ import java.util.LinkedList;
 import org.minueto.sample.fireinthesky.FireInTheSky;
 import org.minueto.sample.image.AlphaImageDemo;
 import org.minueto.sample.image.CircleDemo;
+import org.minueto.sample.image.ArcDemo;
 import org.minueto.sample.image.DrawInImageDemo;
 import org.minueto.sample.image.GetSetPixelDemo;
 import org.minueto.sample.image.ImageDemo;
@@ -38,9 +46,11 @@ import org.minueto.sample.window.ScreenshotDemo;
 
 public class Demos {
 
+	@SuppressWarnings("rawtypes")
 	public Hashtable<String, Class> demos;
 	public LinkedList<String> demoList;
 
+	@SuppressWarnings("rawtypes")
 	public Demos() {
 
 		this.demos = new Hashtable<String, Class>();
@@ -53,6 +63,7 @@ public class Demos {
 		// Image Demo
 		this.addDemo("Alpha Image Demo", AlphaImageDemo.class);
 		this.addDemo("Circle Image Demo", CircleDemo.class);
+		this.addDemo("Arc Image Demo", ArcDemo.class);
 		this.addDemo("Draw inside Image Demo", DrawInImageDemo.class);
 		this.addDemo("Get Set Pxel Image Demo", GetSetPixelDemo.class);
 		this.addDemo("Basic Image Demo", ImageDemo.class);
@@ -90,6 +101,7 @@ public class Demos {
 		this.addDemo("Fire in the Sky", FireInTheSky.class);
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private void addDemo(String name, Class demoClass) {
 		
 		this.demoList.add(name);
@@ -147,6 +159,7 @@ public class Demos {
 		}
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private void runDemo(String demoKey) {
 		
 		Class demo = this.demos.get(demoKey);
@@ -166,7 +179,7 @@ public class Demos {
 			String[] params = new String[1];
 			
 			try {
-				mainMethod.invoke(null, params);
+				mainMethod.invoke(null, (Object[])params);
 			} catch (IllegalArgumentException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

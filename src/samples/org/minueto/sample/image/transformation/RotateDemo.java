@@ -19,6 +19,11 @@ package org.minueto.sample.image.transformation;
  * You should have received a copy of the GNU Lesser General Public
  * License along with this library; if not, write to the Free Software
  * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ * 
+ * Changes
+ * =======
+ * 
+ *  * 09/29/2014 - Michael A. Hawker - Fix Description, add Delay
  **/
  
 import org.minueto.MinuetoFileException;
@@ -28,7 +33,7 @@ import org.minueto.window.MinuetoFrame;
 import org.minueto.window.MinuetoWindow;
 
 /**
- * Sample that scales an image..
+ * Sample that rotates an image.
  *
  * Note that rotate is not an efficient operation and the results should
  * be cached.
@@ -79,6 +84,13 @@ public class RotateDemo {
 			
 			// Render all graphics in the back buffer.
 			window.render();
+			
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				//e.printStackTrace();
+			}
 		}		
 							
 	}

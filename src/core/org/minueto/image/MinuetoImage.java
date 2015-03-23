@@ -35,9 +35,7 @@ import javax.imageio.ImageIO;
 import org.minueto.MinuetoColor;
 import org.minueto.MinuetoFileException;
 import org.minueto.MinuetoOutOfBoundException;
-import org.minueto.MinuetoTool;
 import org.minueto.MinuetoZeroNegativeException;
-import org.minueto.window.MinuetoUnsupportedDisplayModeException;
 
 /**
  * The <code>MinuetoImage</code> class describes an image that can be drawn on a 
@@ -163,6 +161,8 @@ public class MinuetoImage implements Cloneable, MinuetoDrawingSurface {
 	/**
 	 * Return a rotated copy of this <code>MinuetoImage</code>. The angle must be supplied 
 	 * in radian.
+	 * 
+	 * Positive angles will rotate the image in the clockwise direction.
 	 *
 	 * @param dAngle <code>double</code> denoting the rotation angle in radian.
 	 * @return <code>MinuetoImage</code> of the rotated image.

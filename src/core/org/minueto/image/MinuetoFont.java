@@ -28,14 +28,14 @@ import org.minueto.MinuetoZeroNegativeException;
 
 /**
  * The <code>MinuetoFont</code> class is used to store information describing a 
- * Font. All "writing" fonctionnality in Minueto requires a <code>MinuetoFont</code>
+ * Font. All "writing" functionality in Minueto requires a <code>MinuetoFont</code>
  * at some point.
  * <p>
  * Loading a font in Minueto is a best effort task. If the specified font is not 
  * available, Minueto will load a default font instead.
  * <p> 
  * The following fonts are available in the JVM, thus making them platform
- * independant.
+ * independent.
  * <ul>
  * <li> Dialog
  * <li> DialogInput
@@ -63,13 +63,21 @@ public class MinuetoFont
 	public static final String Serif = "Serif";
 	/** One of the standard Java font, similar to Arial. */
 	public static final String SansSerif = "SansSerif";
+	
+	/** 
+	 * Default Constructed Font of 'Dialog' type size 12
+	 * 
+	 * @author Michael A. Hawker
+	 * @since Minueto 2.1
+	 **/
+	public static final MinuetoFont DefaultFont = new MinuetoFont(Dialog, 12, false, false);
 
 	/**
 	 * Creates a font object by loading the specified font with the specified 
-	 * caracteristics. Loading a font in Minueto is a best effort task. If the
+	 * characteristics. Loading a font in Minueto is a best effort task. If the
 	 * specified font is not available, Minueto will load a default font instead.
 	 *
-	 * @param fontName <code>String</code> denoting the name of the font to be loeaded.
+	 * @param fontName <code>String</code> denoting the name of the font to be loaded.
 	 * @param fontSize <code>int</code> indicating the size of the font.
 	 * @param bold <code>boolean</code> indicating if the font should be bold.
 	 * @param italic <code>boolean</code> indicating if the font should be italic.
