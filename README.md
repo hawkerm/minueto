@@ -55,7 +55,8 @@ If you want to start developing with Minueto, don't forget to add
 Minueto.jar in the lib directory to your classpath. You can find more 
 information on changing your classpath at :
  
-<http://www.dynamic-apps.com/tutorials/classpath.jsp>
+- Oracle Docs: https://docs.oracle.com/javase/8/docs/technotes/tools/windows/classpath.html
+- Eclipse Tutorial: https://www.tutorialspoint.com/eclipse/eclipse_java_build_path.htm
  
 Samples
 =======
